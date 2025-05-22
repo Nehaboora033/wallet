@@ -4,7 +4,7 @@
     --fw-md: 500;
     --fw-sm: 400;
 
-    --fs-xl: 24px;
+    --fs-xl: 24px;                          
     --fs-lg: 18px;
     --fs-md: 12px;
     --fs-sm: 10px;
@@ -12,7 +12,6 @@
     --text-grey: #636363;
 
 }
-
 .text_grey {
     color: var(--text-grey);
 }
@@ -49,7 +48,7 @@
     font-size: var(--fs-sm);
 }
 
-@media(min-width:768px) {
+@media(min-width:992px) {
 
     :root {
         --fs-xl: 36px;
