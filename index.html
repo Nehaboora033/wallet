@@ -35,7 +35,15 @@
                 <div class="d-flex gap-sm-4 gap-1 align-items-center">
                     <input type="text" placeholder="Search here..." class="input d-md-block d-none">
                     <img src="./assets/images/svg/search.svg" alt="search" class="d-md-none d-block">
-                    <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode" class="theme">
+                    <!-- <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode" class="theme"> -->
+                    <!-- <div class="button-mode">
+                        <input type="checkbox" id="darkmodebutton">
+                    </div> -->
+
+                    <label class="switch">
+                        <input type="checkbox" id="theme-checkbox">
+                        <span class="slider"></span>
+                    </label>
                     <img src="./assets/images/svg/nav-profile.svg" alt="profile" class="cursor profile-svg">
                 </div>
             </div>
@@ -43,14 +51,16 @@
     </nav>
     <header class="grey-bg">
         <div class="container">
-            <div class="card1">
-                <div class="d-flex justify-content-between ">
-                    <div class="d-flex gap-5 flex-column flex-lg-row ">
-                        <img src="./assets/images/svg/profile1.svg" alt="profile" class="profile-w cursor">
-                        <div>
-                            <p class="fs_xl fw_lg line-height-100 text-dark font-family">Lorem Mollis</p>
-                            <a href="" class="fw_sm fs_md line-height-100  text_grey font-family">@loremmollis</a>
-                            <div class="d-flex w-357 justify-content-between align-items-center mt-34">
+            <div class="card1 position-relative">
+                <div class="d-flex">
+                    <div class="d-flex gap-5 flex-column flex-md-row  align-items-center mx-auto">
+                        <img src="./assets/images/svg/profile1.svg" alt="profile"
+                            class="profile-w cursor max-w-lg-225 max-w-md-180 max-w-149">
+                        <div class="d-flex flex-column align-items-md-start align-items-center">
+                            <p class="fs_xl fw_lg line-height-100 text-dark font-family">
+                                Lorem Mollis</p>
+                            <a href="" class="fw_sm fs_md line-height-100  text_grey font-family ">@loremmollis</a>
+                            <div class="d-flex w-sm-357 w-260 justify-content-between align-items-center mt-34 ">
                                 <div>
                                     <p class="fw_md fs_lg line-height-100 font-family  text_grey mt-2">156</p>
                                     <p class="fw_sm fs_sm line-height-100 font-family text_grey"> Following</p>
@@ -65,12 +75,10 @@
                                     <p class="fw_md fs_lg line-height-100 font-family  text_grey mt-2">382</p>
                                     <p class="fw_sm fs_sm line-height-100 font-family text_grey">Owned</p>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
-                    <button class="font-family line-height-100 fw_lg fs_md text-light button  ">Edit Profile</button>
+                    <button class="font-family line-height-100 fw_lg fs_md text-light button">Edit Profile</button>
                 </div>
                 <hr>
                 <p class="line-height-180 font-family fs_md fw_sm text_grey">Rhoncus facilisis cursus tortor varius
@@ -86,11 +94,129 @@
     </header>
     <section>
         <div class="container">
-            <div class="parent mt-lg-411 mt-630">
+            <div class="parent mt-lg-411  mt-md-300 mt-250">
                 <div class="div1"><img src="./assets/images/png/img1.png" alt="img1" class="cursor w-100"> </div>
                 <div class="div2"> <img src="./assets/images/png/img2.png" alt="img2" class="cursor w-100"></div>
                 <div class="div3"> <img src="./assets/images/png/img3.png" alt="img3" class="cursor w-100"></div>
-                <div class="div4"> <img src="./assets/images/png/img4.png" alt="img4" class="cursor w-100"></div>
+                <div class="div4" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
+                        src="./assets/images/png/img4.png" alt="img4" class="cursor w-100"></div>
+                <!-- Modal -->
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable max-w-1320">
+                        <div class="modal-content  ">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="row gap-3 gap-lg-0">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="./assets/images/png/img-model.png" alt="image"
+                                            class="w-100 h-100 cursor">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="inner-card ">
+                                            <div class="d-flex justify-content-between ">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <img src="./assets/images/svg/like.svg" alt="like">
+                                                    <p class="font-family line-height-100 fw_sm fs_lg text_grey m-0">10
+                                                    </p>
+                                                    <img src="./assets/images/svg/comment.svg" alt="comment">
+                                                    <p class="font-family line-height-100 fw_sm fs_lg text_grey m-0"> 20
+                                                    </p>
+                                                </div>
+                                                <img src="./assets/images/svg/share.svg" alt="share">
+                                            </div>
+                                            <p class="font-family line-height-100 fw_sm fs_md text_grey pt-3">Comments
+                                            </p>
+                                            <div class="comment-section h-482 overflow-scroll">
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile1.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile2.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile3.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile4.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile1.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile2.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile3.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-3 align-items-start mb-20">
+                                                    <img src="./assets/images/svg/m-profile4.svg" alt="profile"
+                                                        class="cursor">
+                                                    <div class="comment-box">
+                                                        <p class="font=family line-height-100 fw_sm fs_md">Jhone Doe</p>
+                                                        <p class="font-family line-height-100 fw_sm fs_md text_grey">
+                                                            Pulvinar viverra ac mauris magna lobortis ultrices.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="div5"> <img src="./assets/images/png/img5.png" alt="img5" class="cursor w-100"></div>
                 <div class="div6"> <img src="./assets/images/png/img6.png" alt="img6" class="cursor w-100"></div>
                 <div class="div7"><img src="./assets/images/png/img7.png" alt="img7 " class="cursor w-100"> </div>
@@ -105,27 +231,11 @@
                 <div class="div16"><img src="./assets/images/png/img16.png" alt="img16" class="cursor w-100"> </div>
             </div>
         </div>
-
     </section>
-
-
-
-
-
-
-
-
-
-    <script>
-        function menuIcon() {
-            document.querySelector('.menu-list').classList.toggle('show')
-            document.querySelector('nav').classList.toggle('activeNavBar');
-        }
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

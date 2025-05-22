@@ -6,7 +6,7 @@
 
     --fs-xl: 24px;                          
     --fs-lg: 18px;
-    --fs-md: 12px;
+    --fs-md: 10px;
     --fs-sm: 10px;
 
     --text-grey: #636363;
@@ -48,7 +48,7 @@
     font-size: var(--fs-sm);
 }
 
-@media(min-width:992px) {
+@media(min-width:768px) {
 
     :root {
         --fs-xl: 36px;
