@@ -24,3 +24,15 @@ function menuIcon() {
     document.querySelector('.menu-list').classList.toggle('show')
     document.querySelector('nav').classList.toggle('activeNavBar');
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the modal and close button elements
+    const modal = document.getElementById("exampleModal");
+    const closeBtn = modal.querySelector(".delete");
+
+    // Add click event listener to the close button
+    closeBtn.addEventListener("click", function () {
+        modal.remove(); // Removes the modal from the DOM
+        location.reload();
+    });
+});
