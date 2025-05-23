@@ -28,17 +28,19 @@
                         </div>
                     </div>
                     <div class="d-flex gap-4 align-items-center menu-list activeNavBar ">
-                        <p class="font-family fw_sm fs_md line-height-100 text_grey m-0 ">Feed</p>
-                        <p class="font-family fw_sm fs_md line-height-100 text_grey m-0">Wallet</p>
+                        <a href="" class="font-family fw_sm fs_md line-height-100 text_grey">Feed</a>
+                        <a href="" class="font-family fw_sm fs_md line-height-100 text_grey">Wallet</a>
                     </div>
                 </div>
                 <div class="d-flex gap-sm-4 gap-1 align-items-center">
                     <input type="text" placeholder="Search here..." class="input d-md-block d-none">
-                    <img src="./assets/images/svg/search.svg" alt="search" class="d-md-none d-block">
-                    <!-- <img src="./assets/images/svg/theme-mode.svg" alt="theme-mode" class="theme"> -->
-                    <!-- <div class="button-mode">
-                        <input type="checkbox" id="darkmodebutton">
-                    </div> -->
+
+                    <svg class="d-md-none d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+                            fill="black" />
+                    </svg>
 
                     <label class="switch">
                         <input type="checkbox" id="theme-checkbox">
@@ -53,7 +55,7 @@
         <div class="container">
             <div class="card1 position-relative">
                 <div class="d-flex">
-                    <div class="d-flex gap-5 flex-column flex-md-row  align-items-center mx-auto">
+                    <div class="d-flex gap-5 flex-column flex-md-row  align-items-center mx-auto mx-md-0">
                         <img src="./assets/images/svg/profile1.svg" alt="profile"
                             class="profile-w cursor max-w-lg-225 max-w-md-180 max-w-149">
                         <div class="d-flex flex-column align-items-md-start align-items-center">
@@ -119,10 +121,39 @@
                                         <div class="inner-card ">
                                             <div class="d-flex justify-content-between ">
                                                 <div class="d-flex align-items-center gap-3">
-                                                    <img src="./assets/images/svg/like.svg" alt="like">
+                                                    <!-- <img src="./assets/images/svg/like.svg" alt="like"> -->
+
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.8142 1.63464C2.30981 1.63464 1.08984 2.84208 1.08984 4.33176C1.08984 5.53429 1.56661 8.38833 6.25959 11.2734C6.34365 11.3246 6.44016 11.3516 6.53856 11.3516C6.63696 11.3516 6.73347 11.3246 6.81754 11.2734C11.5105 8.38833 11.9873 5.53429 11.9873 4.33176C11.9873 2.84208 10.7673 1.63464 9.26292 1.63464C7.75853 1.63464 6.53856 3.26926 6.53856 3.26926C6.53856 3.26926 5.31859 1.63464 3.8142 1.63464Z"
+                                                            stroke="black" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+
                                                     <p class="font-family line-height-100 fw_sm fs_lg text_grey m-0">10
                                                     </p>
-                                                    <img src="./assets/images/svg/comment.svg" alt="comment">
+                                                    <!-- <img src="./assets/images/svg/comment.svg" alt="comment"> -->
+
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_34717_8204)">
+                                                            <path
+                                                                d="M8.46156 10.3526C10.5163 10.3526 11.5439 10.3526 12.1819 9.714C12.8205 9.07596 12.8205 8.04833 12.8205 5.99362C12.8205 3.93891 12.8205 2.91128 12.1819 2.27323C11.5439 1.63464 10.5163 1.63464 8.46156 1.63464H6.28207C4.22736 1.63464 3.19973 1.63464 2.56169 2.27323C1.9231 2.91128 1.9231 3.93891 1.9231 5.99362C1.9231 8.04833 1.9231 9.07596 2.56169 9.714C2.91749 10.0703 3.39425 10.2278 4.10258 10.297"
+                                                                stroke="black" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path
+                                                                d="M8.46151 10.3526C7.78805 10.3526 7.04594 10.625 6.36866 10.9765C5.28001 11.5415 4.73568 11.8243 4.4676 11.6439C4.19953 11.4641 4.2502 10.9056 4.35209 9.78919L4.37497 9.53528"
+                                                                stroke="black" stroke-linecap="round" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_34717_8204">
+                                                                <rect width="13.0769" height="13.0769" fill="white"
+                                                                    transform="translate(0.833252)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+
                                                     <p class="font-family line-height-100 fw_sm fs_lg text_grey m-0"> 20
                                                     </p>
                                                 </div>
