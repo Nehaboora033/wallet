@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="w-100 bg-white position-fixed top-0 z-3">
+    <nav class="w-100 bg-white position-fixed top-0 z-3 transition">
         <div class="container nav-padding">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-3">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="d-flex gap-sm-4 gap-1 align-items-center">
-                    <input type="text" placeholder="Search here..." class="input d-md-block d-none">
+                    <input type="text" placeholder="Search here..." class="input d-md-block d-none tranition">
 
                     <svg class="d-md-none d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
     </nav>
     <header class="grey-bg">
         <div class="container">
-            <div class="card1 position-relative">
+            <div class="card1 position-relative transition">
                 <div class="d-flex">
                     <div class="d-flex gap-5 flex-column flex-md-row  align-items-center mx-auto mx-md-0">
                         <img src="./assets/images/svg/profile1.svg" alt="profile"
@@ -105,28 +105,17 @@
                 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div
-                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable max-w-1320  position-relative">
-                        <div class="modal-content position-static m-lg-5 m-2">
-                            <!-- <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div> -->
-                            <div class="delete d-flex align-items-center justify-content-center position-absolute">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.9833 0.666687L8.99996 6.65002L3.01663 0.666687L0.666626 3.01669L6.64996 9.00002L0.666626 14.9834L3.01663 17.3334L8.99996 11.35L14.9833 17.3334L17.3333 14.9834L11.35 9.00002L17.3333 3.01669L14.9833 0.666687Z"
-                                        fill="black" />
-                                </svg>
-
-                            </div>
-
-
-
-
-
-
-                            <div class="modal-body ">
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable max-w-1320">
+                        <div class="modal-content position-static m-lg-5 m-2 overflow-unset">
+                            <div class="modal-body position-relative overflow-unset">
+                                <div class="delete d-flex align-items-center justify-content-center position-absolute">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.9833 0.666687L8.99996 6.65002L3.01663 0.666687L0.666626 3.01669L6.64996 9.00002L0.666626 14.9834L3.01663 17.3334L8.99996 11.35L14.9833 17.3334L17.3333 14.9834L11.35 9.00002L17.3333 3.01669L14.9833 0.666687Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
                                 <div class="row gap-3 gap-lg-0">
                                     <div class="col-lg-6 col-12">
                                         <img src="./assets/images/png/img-model.png" alt="image"
